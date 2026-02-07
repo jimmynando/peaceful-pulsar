@@ -1,20 +1,17 @@
 ---
-const title = "INDEX";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("writing");
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>My Astro</h1>
-  </body>
-</html>
+<BaseLayout title="INDEX" description="My Index Desc.">
+  <h1>My Astro Index</h1>
+  {
+    posts.map((post: any) => (
+      <li>
+        <a href={`/${post.slug}`}>{post.data.title}</a>
+      </li>
+    ))
+  }
+</BaseLayout>
