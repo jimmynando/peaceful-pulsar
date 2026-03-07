@@ -1,4 +1,28 @@
 :root {
-  --font-body: system-ui, serif;
-  --font-mono: monospace;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 3rem;
+
+  --icon-size-sm: 1.5rem;
+  --icon-size-md: 2rem;
+  --icon-size-lg: 3rem;
+
+  --border-radius: 0.5rem;
+
+  --font-size: 1.3rem;
+
+  color-scheme: light dark; /* Allows the browser to use the system color scheme */
+  --text-color: light-dark(
+    #333333,
+    #f2f4f5
+  ); /* Light mode color first, then dark mode */
+  --background-color: light-dark(
+    #ffffff,
+    #282c34
+  ); /* Light mode color first, then dark mode */
+
+  --menu-icon-color: light-dark(#282c34, #abb2bf);
+  --menu-icon-color-hover: light-dark(#282c34, #3f4654);
+  --logo-icon-color: #528bff;
+  --border-color: light-dark(#282c34, #636d83);
 }

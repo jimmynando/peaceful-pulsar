@@ -6,12 +6,20 @@ const posts = await getCollection("writing");
 ---
 
 <BaseLayout title="INDEX" description="My Index Desc.">
-  <h1>My Astro Index</h1>
-  {
-    posts.map((post: any) => (
-      <li>
-        <a href={`/${post.slug}`}>{post.data.title}</a>
-      </li>
-    ))
-  }
+  <article class="post-content">
+    {
+      posts.map(async (post) => {
+        const { Content } = await post.render();
+        return (
+          <article>
+            <h1>{post.data.title}</h1>
+            <h2>{post.data.description}</h2>
+            <p>{post.data.author}</p>
+            <p>{post.data.date}</p>
+            <Content />
+          </article>
+        );
+      })
+    }
+  </article>
 </BaseLayout>

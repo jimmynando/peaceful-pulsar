@@ -1,0 +1,28 @@
+.navbar ul li:first-child {
+  list-style: none;
+  margin: 0;
+}
+
+.navbar ul li:first-child a {
+  color: var(--logo-icon-color);
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: var(--space-md) 0;
+  padding: var(--space-sm);
+  border-radius: var(--border-radius);
+}
+
+.navbar ul li:hover {
+  background-color: var(--menu-icon-color-hover);
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a {
+  color: var(--menu-icon-color);
+}
+
+[data-icon] {
+  font-size: var(--icon-size-sm);
+}
