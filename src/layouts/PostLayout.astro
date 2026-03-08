@@ -1,8 +1,19 @@
 ---
+import { getCollection } from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
 import UserCardLayout from "./UserCardLayout.astro";
+import NavPostsLayout from "./NavPostsLayout.astro";
 
 const { title, description, date, author } = Astro.props.data;
+const { nextPost, prevPost } = Astro.props;
+
+const posts = await getCollection("writing");
+
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+);
+
+const post = sortedPosts[0];
 ---
 
 <BaseLayout>
@@ -13,5 +24,6 @@ const { title, description, date, author } = Astro.props.data;
       <UserCardLayout date={date} author={author} />
       <slot />
     </section>
+    <NavPostsLayout nextPost={nextPost} prevPost={prevPost} />
   </article>
 </BaseLayout>
