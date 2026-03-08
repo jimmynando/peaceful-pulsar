@@ -33,10 +33,9 @@
   margin: auto;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 0.8s forwards; /* run animation */
+  animation: fadeInUp 0.8s forwards;
 }
 
-/* stagger animations for each post */
 .post:nth-child(1) {
   animation-delay: 0.2s;
 }
