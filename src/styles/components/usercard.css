@@ -1,5 +1,7 @@
 .usercard {
   display: flex;
+  border-bottom: 1px solid var(--text-color);
+  padding-bottom: var(--space-lg);
 }
 
 .usercard img {
