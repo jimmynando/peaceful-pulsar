@@ -1,25 +1,21 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import PostLayout from "../layouts/PostLayout.astro";
+import NavPostsLayout from "../layouts/NavPostsLayout.astro";
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("writing");
+
+const sortedPosts = posts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+);
+
+const post = sortedPosts[0];
+const nextPost = sortedPosts[1];
+
+const { Content } = await post.render();
 ---
 
-<BaseLayout title="INDEX" description="My Index Desc.">
-  <article class="post-content">
-    {
-      posts.map(async (post) => {
-        const { Content } = await post.render();
-        return (
-          <article>
-            <h1>{post.data.title}</h1>
-            <h2>{post.data.description}</h2>
-            <p>{post.data.author}</p>
-            <p>{post.data.date}</p>
-            <Content />
-          </article>
-        );
-      })
-    }
-  </article>
-</BaseLayout>
+<PostLayout data={post.data}>
+  <Content />
+  <NavPostsLayout nextPost={nextPost} prevPost={null} />
+</PostLayout>

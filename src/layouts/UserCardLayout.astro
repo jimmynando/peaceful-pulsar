@@ -1,0 +1,19 @@
+---
+import kuroneko from "../assets/images/kuroneko.jpg";
+
+const { date, author } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+---
+
+<div class="usercard">
+  <img src={kuroneko.src} />
+  <div>
+    <p>{author}</p>
+    <p>{formattedDate}</p>
+  </div>
+</div>

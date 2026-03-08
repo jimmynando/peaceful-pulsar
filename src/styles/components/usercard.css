@@ -1,0 +1,14 @@
+.usercard {
+  display: flex;
+}
+
+.usercard img {
+  border-radius: 100%;
+  height: var(--image-size-sm);
+  margin-right: var(--space-sm);
+}
+
+.usercard div p {
+  font-size: medium;
+  margin: 0;
+}

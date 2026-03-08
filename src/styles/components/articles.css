@@ -7,6 +7,26 @@
     0 0 24px #00000026,
     0 4px 12px #00000040,
     0 2px 6px #00000073;
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.post-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.post-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.post-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+.post-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .post {
@@ -19,6 +39,13 @@
   margin-bottom: var(--space-md);
 }
 
+.post h2 {
+  font-size: var(--font-size);
+  opacity: var(--mid-opacity);
+  margin: -10px 0 var(--space-md) 0;
+}
+
 .post p {
-  margin: var(--space-sm) 0;
+  margin: var(--space-md) 0;
+  line-height: var(--line-height-size-sm);
 }

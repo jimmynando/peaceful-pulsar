@@ -2,4 +2,6 @@
 @import "./reset.css";
 @import "./layout.css";
 @import "./components/navbar.css";
+@import "./components/navposts.css";
 @import "./components/articles.css";
+@import "./components/usercard.css";

@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { nextPost, prevPost } = Astro.props;
+---
+
+<nav class="navposts">
+  <ul>
+    <li>
+      <a
+        href={`/${prevPost && prevPost.slug}`}
+        class={!prevPost ? "disabled" : ""}
+      >
+        <Icon name="up" />
+      </a>
+    </li>
+    <li>
+      <a
+        href={`/${nextPost && nextPost.slug}`}
+        class={!nextPost ? "disabled" : ""}
+      >
+        <Icon name="down" />
+      </a>
+    </li>
+  </ul>
+</nav>

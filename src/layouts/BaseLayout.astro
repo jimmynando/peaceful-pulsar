@@ -1,6 +1,6 @@
 ---
 import "../styles/main.css";
-import { Icon } from "astro-icon/components";
+import NavBarLayout from "./NavBarLayout.astro";
 
 const { title = "My Site", description = "Personal writing" } = Astro.props;
 ---
@@ -17,30 +17,7 @@ const { title = "My Site", description = "Personal writing" } = Astro.props;
   </head>
   <body>
     <div class="container">
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="/">
-              <Icon name="logo" />
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <Icon name="home" />
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <Icon name="user" />
-            </a>
-          </li>
-          <li>
-            <a href="/">
-              <Icon name="about" />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <NavBarLayout />
       <slot />
     </div>
   </body>
