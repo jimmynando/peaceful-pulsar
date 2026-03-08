@@ -10,7 +10,7 @@ const { nextPost, prevPost } = Astro.props;
       <a
         href={`/${prevPost && prevPost.slug}`}
         class={!prevPost ? "disabled" : ""}
-        title="Previous Post"
+        title="Next Post"
       >
         <Icon name="up" />
       </a>
@@ -19,7 +19,7 @@ const { nextPost, prevPost } = Astro.props;
       <a
         href={`/${nextPost && nextPost.slug}`}
         class={!nextPost ? "disabled" : ""}
-        title="Next Post"
+        title="Previous Post"
       >
         <Icon name="down" />
       </a>
