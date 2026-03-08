@@ -16,6 +16,7 @@ body {
   display: flex;
   gap: var(--space-lg);
   padding: var(--space-md);
+  height: 100%;
 }
 
 .grid {

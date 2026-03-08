@@ -1,43 +1,46 @@
-# Astro Starter Kit: Minimal
+# My Personal Blog
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Welcome to my personal blog! The purpose of this project is simple: to keep a journaling routine and write freely in English. Here, I write about anything that comes to my mind — thoughts, ideas, experiences, or just random moments from everyday life.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This blog is my little space to practice writing, reflect, and document my journey in a way that feels natural and unstructured. There are no strict rules here — just words, thoughts, and creativity.
 
-## 🚀 Project Structure
+## Features
 
-Inside of your Astro project, you'll see the following folders and files:
+- Write posts freely in English
+- Maintain a consistent journaling habit
+- Capture ideas, reflections, and random thoughts
+- Easy to edit and add new entries
+- Organized so you can browse past posts
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Getting Started
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Clone this repository to your local machine:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+   ```bash
+   git clone https://github.com/jimmynando/peaceful-pulsar
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. Navigate into the project folder:
 
-## 🧞 Commands
+cd my-blog
 
-All commands are run from the root of the project, from a terminal:
+3. Open or create markdown files to add your own posts.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+4. Use your preferred static site generator (e.g., Astro, Jekyll, Hugo) to build and preview the site:
 
-## 👀 Want to learn more?
+npm install
+npm run dev
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Why This Blog Exists
+
+Writing in English is both a creative outlet and a way to improve my language skills. By keeping a routine and writing regularly, I can explore my thoughts more clearly, experiment with style, and track personal growth over time.
+
+This is also a space for self-expression — where small moments, ideas, or feelings can be captured before they fade. Even a single line can matter, and over time, these entries create a snapshot of life as it happens.
+
+## Contributing
+
+This is a personal project, so contributions aren’t required. However, if you want to fork it or adapt it for your own journaling practice, feel free!
+
+## License
+
+This project is open for personal use and self-expression.
