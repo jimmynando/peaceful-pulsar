@@ -1,7 +1,7 @@
 ---
 title: "Growing"
-description: "Another beginning"
-date: 2026-03-07
+description: "You Get What You Give"
+date: 2026-02-20
 author: Jimmy
 ---
 

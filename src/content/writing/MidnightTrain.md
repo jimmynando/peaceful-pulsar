@@ -1,7 +1,7 @@
 ---
 title: "The Midnight Train"
 description: "A fleeting journey that left a lasting impression."
-date: 2026-02-05
+date: 2026-02-09
 author: Jimmy
 ---
 

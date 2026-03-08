@@ -1,9 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import UserCardLayout from "../layouts/UserCardLayout.astro";
 ---
 
 <BaseLayout title="Schism - About" description="My About Desc.">
   <article class="post-content">
-    <section class="post"></section>
+    <section class="post">
+      <h1>About the blog!</h1>
+      <h2></h2>
+      <UserCardLayout date="2026-03-01" author="Jimmy" />
+      <p>
+        Writing in English is both a creative outlet and a way to improve my
+        language skills. By keeping a routine and writing regularly, I can
+        explore my thoughts more clearly, experiment with style, and track
+        personal growth over time.
+      </p>
+
+      <p>
+        This is also a space for self-expression — where small moments, ideas,
+        or feelings can be captured before they fade. Even a single line can
+        matter, and over time, these entries create a snapshot of life as it
+        happens.
+      </p>
+    </section>
   </article>
 </BaseLayout>

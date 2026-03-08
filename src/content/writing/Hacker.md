@@ -1,7 +1,7 @@
 ---
 title: "Hacker"
-description: "Another beginning"
-date: 2026-03-07
+description: "Round Here"
+date: 2026-02-18
 author: Jimmy
 ---
 

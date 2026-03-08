@@ -1,7 +1,7 @@
 ---
 title: "The Café That Remembers"
 description: "A story about a small café and the people who passed through it."
-date: 2026-01-12
+date: 2026-02-06
 author: Jimmy
 ---
 

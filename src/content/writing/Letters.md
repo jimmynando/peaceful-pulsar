@@ -1,7 +1,7 @@
 ---
 title: "Letters I Never Sent"
 description: "Thoughts captured in words, left unsent but never forgotten."
-date: 2026-03-03
+date: 2026-02-11
 author: Jimmy
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Empty Street"
-description: ""
-date: 2026-03-07
+description: "No Such Thing"
+date: 2026-02-26
 author: Jimmy
 ---
 

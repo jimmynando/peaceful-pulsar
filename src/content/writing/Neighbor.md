@@ -1,7 +1,7 @@
 ---
 title: "Neighbor"
-description: "Another beginning"
-date: 2026-03-07
+description: "It's Been Awhile"
+date: 2026-02-07
 author: Jimmy
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Existence"
-description: "Another beginning"
-date: 2026-03-07
+description: "Push"
+date: 2026-02-23
 author: Jimmy
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Her"
-description: "Another beginning"
-date: 2026-03-07
+description: "One Headlight"
+date: 2026-02-17
 author: Jimmy
 ---
 

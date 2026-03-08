@@ -1,9 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import UserCardLayout from "../layouts/UserCardLayout.astro";
 ---
 
 <BaseLayout title="Schism - Who am I?" description="My About Desc.">
   <article class="post-content">
-    <section class="post"></section>
+    <section class="post">
+      <h1>Who am I?</h1>
+      <h2></h2>
+      <UserCardLayout date="2026-03-01" author="Jimmy" />
+      <p>
+        I’m Fernando. I work with software and tech, but I also like to write
+        and keep a personal blog in English. I use it to capture thoughts,
+        ideas, and little moments in life — kind of like a diary that no one has
+        to read. I’m curious about people and the world, and I like reflecting
+        on things as they happen.
+      </p>
+    </section>
   </article>
 </BaseLayout>
