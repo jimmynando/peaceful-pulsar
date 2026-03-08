@@ -1,5 +1,5 @@
 ---
-title: "Andromedaaaaaa"
+title: "Andromeda"
 description: ""
 date: 2026-03-07
 author: Jimmy
