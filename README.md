@@ -1,4 +1,4 @@
-# My Personal Blog
+# Schism Blog
 
 Welcome to my personal blog! The purpose of this project is simple: to keep a journaling routine and write freely in English. Here, I write about anything that comes to my mind — thoughts, ideas, experiences, or just random moments from everyday life.
 
