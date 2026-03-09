@@ -17,7 +17,7 @@ This blog is my little space to practice writing, reflect, and document my journ
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/jimmynando/peaceful-pulsar
+   git clone https://github.com/jimmynando/schism
    ```
 
 2. Navigate into the project folder:
